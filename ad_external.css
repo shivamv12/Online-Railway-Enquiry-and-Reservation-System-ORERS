@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 Apr, 2016, 12:23:45 AM
+    Author     : hp
+*/
+
+body { margin:0; padding:0; }
+.header { background-color:#2778fc; height:25%; z-index:2; opacity:0.8; position:absolute; width:100%; }
+.header > img { padding-top:1.5%; transition-duration:3s; padding-left:3%; float:left; }
+.header > h1 { margin-top:3%; text-indent:15%; background-color:transparent; width:75%; position:absolute; color:whitesmoke; text-shadow:10px 1px 10px black; font-size:2.2em; }
+.header > h4 { margin-top:6.5%; font-size:1.3em; color:whitesmoke; font-family:Arial; text-indent:10%; text-shadow:10px 1px 10px black; float:left; background-color:transparent; width:65%; }
+.home_btn { padding:0.5%; color:whitesmoke; background-color:#2778fc; border:1px solid whitesmoke; border-radius:5px; cursor:pointer; margin-top:5%; margin-left:10%; }
+.main { height:100%; background-image:url('Images/hd.jpg'); background-repeat:no-repeat; background-size:100% 100%; }
+.home { height:20%; margin-top:-4%; margin-left:4%; cursor:Pointer; }
+//.home:hover { box-shadow:inset 0px 0px 30px black; }
+.action { border:3px solid transparent; height:28%; width:20%; margin-top:33%; margin-left:56%; position:absolute; }
+.insert { cursor:pointer; height:20%; text-align:center; font-family:Comic Sans MS; font-weight:bold; font-size:1.5em; vertical-align:text-top; color:#2778fc; border-radius:5px; width:100%; background-color:whitesmoke; margin-top:1%; }
+.ad_log { height:32%; width:20%; position:absolute; box-shadow:10px 10px 20px black; border-radius:10px; background-color:whitesmoke; opacity:0.9; margin-top:24.5%; margin-left:77%; padding:1%; }
+.ad_log > form > label { font-family:Comic Sans MS; font-size:1.2em; font-weight:bold; background-color:transparent; color:#076caf; }
+.ad_log > form > input { padding:2%; border-radius:5px; border:1px solid #006699; margin-left:15%; margin-top:5%; margin-bottom:5%; color:black; }
+.ad_log > form > .login_btn { width:67%; background-color:whitesmoke; box-shadow:inset 0px 0px 20px #006699; font-weight:bold; color:#006699; }
+.footer { background-color:#2778fc; height:10%; opacity:0.8; margin-top:-4.9%; width:100%; }
+.outer { background-image:url('Images/hd2.jpg'); height:100%; background-repeat:no-repeat; background-size: 100% 100%; }
+.inner { background-color:white; height:44%; opacity:0.8; margin-top:18%; width:30%; position:absolute; border-radius:10px; box-shadow:5px 5px 10px black; margin-left:5%; }
+.inner > h1 { font-size:1.7em; font-family:Comic Sans MS; text-align:center; color:#2778fc; }
+.inner > form { margin-left:3%; }
+.inner > form > label {  font-family:Comic Sans MS; font-size:1.1em; font-weight:bold; background-color:transparent; color:#076caf; }
+.inner > form > input { float:right; margin-right:3%; padding:0.5%; border-radius: 5px; border:1px solid #006699; }
+.inner > table { margin-bottom:3%; border:2px solid #2778fc; border-radius:5px; font-family:courier; }
+.head { font-weight:bold; font-size:1.3em; width:10%; border-bottom:3px double #006699; border-radius:5px; }
+.head1 { font-weight:bold; font-size:1.3em; border-bottom:3px double #006699; border-radius:5px; }

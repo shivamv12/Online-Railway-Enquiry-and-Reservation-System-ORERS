@@ -1,0 +1,209 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 Feb, 2016, 1:52:11 PM
+    Author     : hp
+*/
+
+body { margin:0%; background-color:#006699; }
+.head {
+    width:80%;
+    height:4%;
+    margin-left:10%;
+    text-indent:1%;
+    padding:0.2%;
+    font-family:Verdana;
+    font-size:0.9em;
+    background-color:#006699; /*transparent; goldenrod*/
+    position:fixed;
+    z-index:2;
+    color:#eee;
+}
+.content { margin-left:4%; }
+a { text-decoration:none; color:#eee; }
+a:first-child { font-size:1.2em; }  a:last-child { font-size:0.8em; } a:nth-child { font-size:1em; }
+.head > form > input { position:relative; width:71%; margin-top:0.5%; border-radius:5px; padding:2px; color:#2778fc; font-family:Verdana; }
+.head > form > #btn { /*position:relative; background-color:#aaa; width:22%; border:none; color:white; padding:0.3%; box-shadow:1px 1px 1px; cursor:Pointer;*/
+padding:2px; font-family:Verdana; background-color:#006699; color:whitesmoke; border:2px ridge #eee; cursor:Hand; font-size:12px; border-radius:5px; width:22%; }
+.head > form > #btn:hover { cursor:Pointer; }
+.head > form { position:absolute; margin-top:-2%; margin-left:40%; }
+.head > .cris { margin-left:34%; cursor:Pointer; }
+.main-content { height:150%; width:80%; margin-left:10%; margin-top:2.2%; margin-bottom:5%; position:absolute; background:linear-gradient(to bottom, black -5%, white 3%); }
+.main-content > .header > .pic { max-height:11.5%; cursor:Pointer; max-width:20%; float:left; margin-left:3%; margin-top:2.5%; position:absolute; }
+.headings { font-family:Agency FB; margin-top:4%; position:absolute; color:#006699; margin-left:18%; float:left; }
+.headings > h1 { margin-top:1%; font-size:2em; }
+.headings > h4 { margin-top:-2.5%; font-size:1.1em; font-family:Arial; text-indent:10%; }
+.main-content > .header > .pic1 { height:12.5%; max-width:20%; position:absolute; margin-left:88%; margin-top:2.4%; }
+
+/*-------- Start of Hover List ------------*/
+
+ul { list-style-type:none; margin-top:14.2%; margin-left:-1.5%; }
+ul li:first-child { background-color:black; width:4%; border-top-left-radius:5px; border-bottom-left-radius:5px; }
+ul li { color:#eee; font-family:Arial; box-shadow:1px 3px 1px #888; cursor:Pointer; font-size:1em; border-right:2px solid black; display:inline-block; width:14.4%; text-align:center; padding:0.5%; margin-left:-0.35%; background-color:#0088aa; }
+ul li:hover { background-color:black; }
+ul li:last-child { border-right:0px; border-top-right-radius:5px; border-bottom-right-radius:5px; }
+
+/* --------------------------------------- */
+
+//.slider { float:left; height:33%; width:70%; border:1px solid skyblue; margin:0px; border-radius:1px; margin-left:2%; margin-top:-0.8%; }
+.slider:hover .left { display:block; }
+.slider:hover .right { display:block; }
+//.slide { height:99%; width:99.5%; padding:0.2%; }
+.left, .right { background-color:#111; opacity:1; cursor:Pointer; margin-top:-30.4%; display:none; text-align:center; font-family:Bradley Hand ITC; position:absolute; font-size:1.1em; font-weight:bold; color:whitesmoke; height:3%; width:12%; }
+.left { float:left; border-radius:5px; }
+.right { margin-left:58%; border-radius:5px; }
+.map { height:25%; width:26%; margin-left:72.5%; margin-top:3.7%; position:absolute; }
+#black_box1 { background-color:black; opacity:0.7; z-index:1; overflow:hidden; }
+#black_box { background-color:transparent; position:relative; height:100%; animation: mymove 3s linear infinite alternate; animation-play-state:play; }
+.whatsnew > h2 { font-family:Baskerville Old Face; float:left; font-size:2em; text-indent:5%; padding:0.5%; margin-top:2.5%; margin-right:12%; color:lightgoldenrodyellow; }
+/*  #black_box ul { list-style-type:none; margin-top:1%; }
+#black_box ul li { margin-left:-18%; width:115%; text-indent:-1%; margin-top:2%; font-family:Times New Roman; font-size:1.4em; border-bottom:2px solid white; }   */
+.map_footer { height:3%; width:26%; position:absolute; margin-top:26.6%; margin-left:72.5%; background-color:#006699; }
+.new_content { position:absolute; margin-left:73%; margin-top:5%; width:25%; }
+th { padding:0% ; margin:0%; font-size:20px; text-align:left; font-family:Agency FB; cursor:Pointer; border-bottom:2px #006699 dotted; text-indent:2%; }
+
+/* - - - - - - Animation - - - - - - - */
+
+@keyframes mymove { 
+/*	from  {  left:0px; }
+	to { left:1210px; }
+	from { right:-1210px; }
+	to { right:0px; }	*/
+	from {  top:-37%; }
+	to { top:0%; }
+	}
+
+@keyframes myslider {
+        0%  {
+                 left:0%;
+                }
+        20% {
+                 left:0%;
+                }
+        25% {
+                 left:-100%;
+                }
+        45% {
+                 left:-100%;
+                }
+        50% {
+                 left:-200%;
+                }
+        70% {
+                 left:-200%;
+                }
+        75% {
+                 left:-300%;
+                }
+        95% {
+                 left:-300%;
+                }
+        100% {
+                 left:-300%;
+-                }
+        }
+/* - - - - - Animation End - - - - - - */
+
+#slider { float:left; overflow:hidden; height:33%; width:70%; border:1px solid skyblue; margin:0px; border-radius:1px; margin-left:2%; margin-top:-0.8%; }
+#slider figure { margin-top:0%; margin-left:0%; animation:20s myslider infinite; width:800%; left:0%; position:relative; }
+.slide { height:100%; width:12.5%; border-radius:1px; float:left; }
+
+/* .pp { height:80%; margin-left:5%; margin-top:1%; box-shadow:1px 1px 1px black; border-radius:5px;  }
+.pp:hover { box-shadow:1px 1px 1px khaki; cursor:grab; } */
+.state { height:50%; margin-top:5%; box-shadow:1px 1px 1px black; border-radius:15px; cursor:Hand; }
+.state:hover { height:49.5%; }
+.wrapper { height:3.2%; width:96.3%; margin-left:2%; margin-top:30%; border:2px solid #006699; box-shadow:inset 5px 5px 10px #006699; position:absolute; overflow:auto; }
+.latest { height:100%; text-align:center; width:11%; border-top-right-radius:5px; border-bottom-right-radius:5px; position:absolute; background-color:blue; font-family:Bookman Old Style;/*Viner Hand ITC*/ z-index:1; font-size:1.1em; font-style:Italic; color:whitesmoke; }
+.news { font-family:Agency FB; font-size:1.1em; height:100%; margin-left:11%; background-color:transparent; position:absolute; animation: move 30s infinite alternate; padding:0.1%; }
+.media { background-color:transparent; position:absolute; height:30%; width:30%; margin-top:33.8%; margin-left:2%; }
+.video1 { float:left; border-radius:5px; border:2px solid black; position:absolute; height:66.5%; width:100%; }
+.sorce1 { margin-top:0%; float:left; }
+.expirence { height:41.1%; width:65.4%; position:absolute; background:linear-gradient(to bottom, #006699 -250%, white 100%); border:2px solid black; border-radius:5px; margin-top:33.8%; margin-left:33%; }
+.heding { font-family:Agency FB; font-size:30px; margin-left:1%; text-shadow:2px 1px 2px blue; margin-top:0%; }
+.expln { text-indent:20%; margin-left:1%; text-shadow:1px 2px 1px black; color:skyblue; margin-top:-3%; font-size:20px; font-family:none; }
+.budget { height:10%; width:30.4%; margin-top:53%; margin-left:2%; border-radius:5px; position:absolute; background-color:/*#7868fc;*/#0077aa; }
+.code { height:90%; z-index:2; position:absolute; float:left; width:30%; border-radius:10px; margin-top:-0.5%; padding:2%; }
+//.code:hover { height:200%; width:99%; padding:0%; border:2px dotted black; border-radius:0px; cursor:Pointer; }
+.likeus { z-index:1; position:absolute; height:10%; background-color:#0077aa; margin-top:62.6%; border-radius:5px; width:30.4%; margin-left:2%; }
+.frame > h4 { font-family:Century Gothic; font-size:1.2em; float:left; color:/*#438283;*/blue; position:absolute; margin-top:2.8%; margin-left:3%; }
+.frame { height:86%; background-color:whitesmoke; border-radius:10px; border:2px solid black; width:95%; opacity:1; position:absolute; margin-left:2%; margin-top:1.7%; }
+.img { margin-left:2%; height:100%; margin-top:1%; cursor:Hand; float:left; }
+.share_image { position:absolute; height:45%; margin-top:0.8%; width:60%; margin-left:40%; background-color:transparent; }
+.sms_services { position:absolute; height:20%; width:30%; border:2px #222 double; border-radius:5px; margin-left:33%; margin-top:53%; }
+.footer { position:absolute; background-color:transparent; height:8%; width:80%; color:whitesmoke; margin-top:76.5%; text-align:right; margin-left:10%; }
+.footer > #logoutbtn { float:left; padding:2px; font-family:Verdana; background-color:#006699; color:whitesmoke; border:2px ridge #eee; cursor:Hand; font-size:12px; border-radius:5px; width:10%; cursor:Pointer; }
+.footer > a { font-size:1.2em; }
+.footer > a:hover { text-decoration:underline; }
+.hours { color:seagreen; float:left; margin-top:4%; font-family:Tempus Sans ITC; font-weight:bold; font-size:1.6em; margin-left:2%; }
+.sms_services > h5 { color:blue; margin-top:4%; font-size:1.4em; font-family:Tempus Sans ITC; margin-left:25%; position:absolute; }
+.sms_services > ul { list-style-type:none; margin-top:-2%; }
+.sms_services > ul li { background-color:transparent; color:#006677; font-family:Verdana; font-size:1em; margin-left:-12%; margin-top:1%; border-right:none; width:110%; border-bottom:2px black dotted; } 
+.headfeed { box-shadow:inset 0px 0px 20px 2px black; position:absolute; height:41%; width:70%; margin-left:15%; background-color:whitesmoke; margin-top:1%; border-top-left-radius:15px; border-top-right-radius:15px; }
+.emb { height:50%; border-radius:10px; padding:2%; float:left; margin-top:-0.5%; }
+.rail_head { font-size:2.5em; margin-left:18%; color:#0088aa; background-color:transparent; width:30%; margin-top:4%; font-family:Baskerville Old Face; }
+.rail_head1 { font-size:1.4em; margin-left:12%; color:#0088aa; background-color:transparent; margin-top:-3.2%; width:38%; float:left; font-family:Baskerville Old Face; }
+.logo1 { position:absolute; margin-left:71%; margin-top:-10%; height:45%; }
+.inner { position:absolute; height:44.5%; width:100%; background-color:transparent; margin-top:3.5%; }
+.innermost { position:absolute; height:96%; width:49.5%; background-color:transparent; float:left; margin-left:24.3%; }
+.feedback { position:absolute; height:77%; margin-bottom:3%; width:70%; margin-left:15%; margin-top:24.8%; border-bottom-left-radius:10px; border-bottom-right-radius:10px; background-color:whitesmoke; box-shadow:inset 0px 0px 20px 2px black; }
+.formHead { box-shadow:inset 0px 0px 10px 1px black; padding:1%; text-align:center; margin-top:21.2%; margin-left:15%; position:absolute; height:2.8%; width:68%; background-color:whitesmoke; }
+.feedback > form > fieldset { color:#006699; font-weight:bold; border-color:silver; width:90%; margin-left:3%; font-family:Century Gothic; margin-top:2%; border-radius:5px; font-size:20px; }
+.formHead > h2 { font-family:Comic Sans MS; margin-top:-1%; color:#006699;; }
+.input_field { margin-left:13%; width:30%; color:#006699; margin-top:1.2%; border:1px solid #2778fc; border-radius:5px; padding:0.5%; }
+.opt { text-align:center; border-bottom:2px dashed black; font-weight:bold; }
+.btn { height:8%; width:20%; background-color:#acbdca; border-radius:5px; box-shadow:inset 0px 0px 10px #006699; cursor:Pointer; color:whitesmoke; position:absolute; padding:0.5%; text-align:center; }
+.login { height:60%; width:50%; position:absolute; background-color:#bde2fd; opacity:1; border-radius:5px; margin-left:24%; margin-top:8%; }
+.login > h1 { color:#006699; font-size:2.5em; padding:5%; margin-left:42%; position:absolute; margin-top:10%; font-family:Candara; }
+.innerLog { position:absolute; background-color:transparent; border:2px solid #006699; border-radius:5px; padding:2%; margin-top:38%; margin-left:10%; width:75%; }
+.innerLog > form > label { font-family:Verdana; color:#006699; font-size:1.5em; padding:0%; position:absolute; }
+.innerLog > form > input { box-shadow:inset 0px 0px 10px skyblue; font-family:Verdana; color:#2778fc; font-size:1em; width:95%; padding:2%; border-radius:5px; color:#006677; margin-top:5%; }
+.login > a { margin-top:93%; margin-left:-30%; clear:left; position:absolute; font-family:Verdana; font-size:1em; color:#0088aa; }
+/* .outer { border:2px solid #006699; height:78%; width:96%; border-radius:5px; margin-left:2%; /* background-image:url('Images/hdAni.jpg'); background-size:100% 100%; background:linear-gradient(to bottom, #006699 -65%, whitesmoke 80%); }  */
+.signup { height:73%; margin-top:2%; margin-left:17.5%; width:65%; position:absolute; background-color:#bde2fd; opacity:1; border-radius:5px; }
+.signup > h1 { color:#006699; font-size:2.5em; padding:5%; margin-left:35%; position:absolute; margin-top:6%; font-family:Candara; }
+.innerLog1 { position:absolute; background-color:transparent; border:2px solid #006699; border-radius:5px; padding:2%; margin-top:27%; margin-left:10%; width:75%; }
+.innerLog1 > form > label { font-family:Verdana; color:#006699; font-size:1.5em; padding:0%; position:absolute; }
+.innerLog1 > form > input { box-shadow:inset 0px 0px 10px skyblue; font-family:Verdana; color:#2778fc; font-size:1em; width:95%; padding:2%; border-radius:5px; color:#006677; margin-top:8%; }
+span { font-family:Verdana; color:#006699; font-size:1.5em; margin-top:6%; margin-left:2%; float:left; position:absolute; }
+.innerLog1 > form > .sbmt { background-color:#2778fc; margin-top:3%; width:99%; color:whitesmoke; cursor:pointer; }
+.sitemap { height:100%; width:70%; box-shadow:inset 0px 0px 20px 2px black; margin-left:15%; position:absolute; background-color:whitesmoke; margin-top:1%; margin-bottom:3%; border-radius:15px; }
+.sitemap > h1 { margin-left:50%; font-size:2em; margin-top:3%; color:#006699; font-family:Verdana; }
+.sitemap > img { padding:4%; margin-top:-2%; float:left; position:absolute; }
+.sitemap > ul { list-style-type:none; margin-left:30%; margin-top:6%; }
+.sitemap > ul li:first-child { border-right:2px solid transparent; }
+.sitemap > ul > li { display:inline; border-right:2px solid transparent; width:80%; margin-bottom:0%; font-size:1.5em; color:#006688; margin-top:-5%; box-shadow:1px 3px 1px transparent; background-color:transparent; position:relative; text-align:left; height:30%; }
+.sitemap > ul > li > ul { margin-top:0.5%; margin-bottom:2%; }
+.sitemap > ul > li > ul > li { height:100%; border-right:2px solid transparent; margin-top:0.2%; text-align:left; background-color:transparent; box-shadow:1px 3px 1px transparent; position:relative; color:#0066cc; width:100%; }
+.enquiry { height:18%; width:96%; border-radius:10px; margin-top:0%; position:absolute; border:2px solid #006699; margin-left:2%; }
+.enquiry > img { margin-top:1%; height:90%; margin-left:3%; position:absolute; }
+.enquiry > form { background-color:transparent; margin-left:25%; padding:2%; }
+.enquiry > form > select { width:30%; padding:1%; border-radius:5px; color:#006699; border:1px solid #006699; font-size:1em; border-bottom:3px double #006699; margin-top:10%; }
+.enquiry > form > select > option { border-bottom:3px double #006699; font-style:italic; }
+.enquiry > form > span { margin-top:2%; margin-left:0%; position:absolute; }
+.arrow { transition-duration:1s; margin-top:1%; width:8%; transform:rotate(180deg); margin-left:2%; }
+.srch_train { text-align:right; background-image:url('Images/Misc-Search-icon.png'); background-size:25% 90%; background-repeat:no-repeat; margin-left:6%; padding:1.2%; width:19%; border:1px solid #006699; background-color:whitesmoke; border-radius:5px; color:#006699; font-size:1em; cursor:pointer; }
+.srch_train:hover { box-shadow:0px 0px 10px #006699; }
+.train_table { border:2px solid #006699; position:absolute; margin-top:18%; margin-left:2%; border-radius:10px; width:96%; height:58%; }
+.train_table > h1 { text-align:center; font-family:Bradley Hand ITC; text-shadow:0px 0px 10px #006699; color:#006699; }
+.next_page { width:10%; position:absolute; padding:0.8%; margin-left:85%; cursor:pointer; margin-top:1%; font-size:1.1em; border-radius:5px; border:1px solid #006699; color:#006699; background-color:#ccc; }
+.logo2 { transform:rotateY(180deg); position:absolute; float:left; }
+.enquiry > h1 { color:#006699; position:absolute; padding-left:46%; margin-top:0%; }
+.enquiry > table { position:absolute; width:75%; margin-left:25%; margin-top:6%; border-radius:10px; }
+.enquiry > table > th { padding:0%; }
+.reserv_form > label { font-family:Verdana; color:#006699; font-size:1.5em; padding:3%; padding-left:5%; position:absolute; }
+.input_field1 { margin-left:5%; width:20%; color:#006699; margin-top:1%; border:1px solid #2778fc; border-radius:5px; padding:0.5%; }
+.reserv_form > .sel { width:20%; margin-left:5%; padding:0.5%; border-radius:5px; border:1px solid #2778fc; color:#2778fc; font-size:0.8em; }
+.reserv_form > .sel > .opt1 { border-bottom:3px double #006699; font-style:italic; color:#aaa; }
+.add_field { color:#006699; border:1px solid #2778fc; border-radius:5px; cursor:pointer; padding:0.8%; background-color:whitesmoke; margin-left:5.8%; width:12%; }
+.ticket { height:84%; width:74.8%; position:absolute; padding:1%; border:2px solid #006699; margin-top:31%; margin-left:11.5%; border-radius:10px; }
+.ticket_inner { background:linear-gradient(to bottom, #666 -100%, whitesmoke); border:2px dotted blue; height:95%; border-radius:5px; }
+.ticket_inner > h3 { background-color:darkblue; color:whitesmoke; padding-left:5%; float:left; width:95%; font-size:1.5em; }
+.ticket_inner > h3 > img { height:6%; float:right; padding-right:5%; }
+.ticket_inner > table { width:100%; }
+.info_travellor { width:90%; border:2px solid #aaa; margin-top:5%; margin-left:5%; border-radius:5px; }
+.info_travellor > h2 { margin-top:0%; }
+.info_travellor > h3 { float:right; margin-right:5%; }
+.print { margin-left:70%; margin-top:8%; background-color:transparent; border-radius:5px; border:2px solid whitesmoke; padding:0.5%; cursor:Pointer; width:10%; position:absolute; }
